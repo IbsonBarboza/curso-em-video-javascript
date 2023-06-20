@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #d3d3d3;
+        }
+
+        h1, h2, p {
+            text-align: center;
+        }
+
+        p {
+            color: #ffffff;
+            text-shadow: 0.5px 1px 2px #00000080;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula 06 de JavaScript</h1>
+    <h2>Exercicio 001</h2>
+    <p>
+        "<span id="par">Insira texto aqui</span>"
+    </p>
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome? ')
+        /* cocatenação de forma simples
+        window.alert('É um prazer em te conhecer, ' + nome) */
+
+        window.alert(`É um prazer em te conhecer ${nome}`)
+        par.innerHTML = nome
+    </script>
+</body>
+</html>
