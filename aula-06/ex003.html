@@ -16,25 +16,20 @@
         h1, h2, div {
             text-align: center;
         }
-        
-        input.segd {
-            margin: 10px;
-        }
     </style>
 </head>
 <body>
     <h1>Aula 06 de JavaScript</h1>
-    <h2>Exercicio 02</h2>
+    <h2>Exercicio 003</h2>
     <div>
-        O resultado é:<span id="res"></span> 
+
     </div>
 
     <script>
-        var num1 = Number(window.prompt('Digite um numero: '))
-        var num2 = Number(window.prompt('Digite outro numero: '))
-        var soma = num1 + num2
-        window.alert(`O resultado é ${soma}`)
-        res.innerHTML = soma
+        var nome = window.prompt('Qual é o seu nome? ')
+        document.write(`O nome ${nome} têm ${nome.length} letras. </br>`)
+        document.write(`Veja seu nome em maiusculas: ${nome.toUpperCase()} </br>`)
+        document.write(`Veja seu nome em minusculas: ${nome.toLowerCase()}`)
     </script>
 </body>
 </html>
