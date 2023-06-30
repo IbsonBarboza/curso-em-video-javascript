@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #d3d3d3;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        div#link {
+            text-decoration: underline;
+            color: #0000ff;
+            padding-bottom: 15px;
+        }
+
+        footer {
+            margin: -8px;
+            font-style: italic;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Iniciando estudos com DOM</h1>
+    </header>
+
+    <main>
+        <p>
+            Aprendendo a usar <strong>DOM</strong> em JS.
+        </p>
+        <p class="p2">
+            Resultado
+        </p>
+
+        <div id="link">
+            clique aqui
+        </div>
+        <div class="div2">
+            Teste de DOM.
+        </div>
+    </main>
+
+    <footer>
+        <p>Site by &copy;IbsDev for CursoemVideo</p>
+    </footer>
+
+    <script>
+        let p1 = document.getElementsByTagName('strong')[0]
+        let p2 = document.getElementsByClassName('p2')[0]
+        let div1 = document.getElementById('link')
+        let div2 = document.querySelector('div.div2')
+
+        p1.style.color = 'red'
+        p2.innerHTML = '<strong>DOM</strong>'
+        div1.style.color = 'green'
+        div2.style.color = 'purple'
+    </script>
+</body>
+</html>
