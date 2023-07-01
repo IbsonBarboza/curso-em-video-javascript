@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            font-size: 1.2em;
+            text-align: center;
+            background-color: #d3d3d3;
+        }
+
+        div {
+            background-color: #ffffff;
+            border-radius: 10px;
+            line-height: 100px;
+            width: 150px;
+            height: 100px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eventos DOM</h1>
+    </header>
+
+    <main>
+        <div class="action">
+            Ação..
+        </div>
+    </main>
+
+    <footer>
+        <p>Site made by &copy;IbsDev for CursoemVideo.</p>
+    </footer>
+
+    <script>
+        var act = document.querySelector('div.action')
+        act.addEventListener('click', clicar)
+        act.addEventListener('mouseenter',entrar)
+        act.addEventListener('mouseout',sair)
+
+            function clicar() {
+                act.innerHTML = 'Clicou!'
+                act.style.background = 'violet'    
+            }
+
+            function entrar() {
+                act.innerHTML = 'Entrou!'
+                act.style.background = 'lightgreen'
+            }
+
+            function sair() {
+                act.innerHTML = 'Saiu..'
+                act.style.background = 'lightblue'
+            }
+    </script> 
+</body>
+</html>
